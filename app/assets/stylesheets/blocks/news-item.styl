@@ -1,0 +1,45 @@
+.news-item
+  clearfix()
+  &__title
+    cursor pointer
+    font-size 24px
+    display inline-block
+    width 79%
+  &__image
+    width 60px
+    height 60px
+    border-radius 50px
+    margin 0 10px
+    display inline-block
+    &-container
+      display inline-block
+      vertical-align top
+      text-align center
+      width 19%
+  &__text
+    display inline-block
+    width 100%
+    &-container
+      display inline-block
+      vertical-align top
+      width 79%
+  &__details
+    padding-bottom 10px
+    margin 10px 0
+    &._hidden
+      display none
+  &__related
+    clearfix()
+    & > div
+      margin 10px 0
+      &:last-child
+        margin 0
+    &-title
+      font-size 20px
+      border-bottom 1px solid rgba(204, 204, 204, 0.52)
+  time
+    font-size 24px
+    display inline-block
+    width 19%
+    vertical-align top
+    text-align center
