@@ -46,7 +46,7 @@ class View {
   }
 
   undelegate(selector, eventType, func) {
-    this.el.querySelector(selector).addEventListener(eventType, func.bind(this));
+    this.el.querySelector(selector).removeEventListener(eventType, func.bind(this));
   }
 
   clearChildren() {
